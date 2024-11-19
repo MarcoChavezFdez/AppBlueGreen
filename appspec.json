@@ -1,0 +1,26 @@
+{
+  "version": 0,
+  "os": "linux",
+  "files": [
+    {
+      "source": "/var/www/html/myApp/proyecto_Control_de_Cambios/controlador",
+      "destination": ""
+    }
+  ],
+  "hooks": {
+    "ApplicationStop": [
+      {
+        "location": "/StopServer",
+        "timeout": 300,
+        "runas": "root"
+      }
+    ],
+    "ApplicationStart": [
+      {
+        "location": "/StartServer",
+        "timeout": 900,
+        "runas": "root"
+      }
+    ]
+  }
+}
