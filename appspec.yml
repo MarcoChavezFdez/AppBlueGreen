@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/myApp/proyecto_Control_de_Cambios/controlador
+    destination: /var/www/html/myApp/proyecto_Control_de_Cambios/controladorNew
 hooks:
   ApplicationStop:
     - location: /stop_server
